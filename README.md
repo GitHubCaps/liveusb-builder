@@ -91,7 +91,9 @@ Mount them and create the directory, and we need to make the directory ``liveusb
 ```
 udevil mount /dev/sdb1 /media/boot
 udevil mount /dev/sdb2 /media/root
+sudo install -d /media/boot/liveusb-kernel
 sudo install -d /media/root/liveusb-data
+sudo chown $(whoami) /media/boot/liveusb-kernal/
 sudo chown $(whoami) /media/root/liveusb-data/
 ```
 
